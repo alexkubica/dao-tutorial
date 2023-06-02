@@ -216,7 +216,7 @@ export default function Home() {
     const web3Provider = new providers.Web3Provider(provider);
 
     const { chainId } = await web3Provider.getNetwork();
-    if (chainId !== 5) {
+    if (chainId !== 11155111) {
       window.alert("Please switch to the Sepolia network!");
       throw new Error("Please switch to the Sepolia network");
     }
